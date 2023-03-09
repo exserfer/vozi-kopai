@@ -1,0 +1,16 @@
+__pycache__
+/media
+/static
+.idea
+settings.ini
+BACKUP
+*env
+.mypy_cache
+.pytest_cache
+.db_postgres
+.rabbitmq_data
+.venv
+logs
+pyvenv.cfg
+Lib/
+Scripts/
