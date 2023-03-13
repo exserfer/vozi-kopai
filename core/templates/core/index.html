@@ -59,14 +59,15 @@
                     <td>{{ item.current_weight_payload }} т.</td>
                     <td>
                         <span
-                            class="
-                                {% if item.persent_overload >= 0 %}
+                            class="{% if item.persent_overload >= 0 %}
                                 text-danger
                                 {% else %}
                                 text-success
                                 {% endif %}"
                         >
-                        {{ item.persent_overload }} %
+                        {% if item.persent_overload >= 0 %}
+                            {{ item.persent_overload }} %
+                        {% endif %}
                         </span>
                     </td>
                 </tr>
